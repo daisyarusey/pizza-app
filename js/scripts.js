@@ -77,9 +77,9 @@ $(document).ready(function(){
 
     $(".btn.complete").click(function() {
       var location = $(".additional-info .location input").val();
-      $(".additional-info h4").show();
+      $(".additional-info #yes").show();
       $(".additional-info .location").hide();
-      $(".additional-info h4 span").html(location);
+      $(".additional-info #yes span").html(location);
     });
   });
 
