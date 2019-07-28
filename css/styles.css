@@ -2,3 +2,12 @@ body{
   background-image: url(../images/background.jpg);
   background-size: cover;
 }
+.lobster{
+  font-family: 'Lobster', cursive;
+}
+.lobster>h1{
+  font-size: 60px;
+}
+.jumbotron{
+  background:rgba(255,255,255,0.5);
+}
