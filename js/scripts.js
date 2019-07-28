@@ -72,7 +72,7 @@ $(document).ready(function(){
       $(".additional-info h5").hide();
       $(".btn.yes").hide();
       $(".btn.no").hide();
-      
+      $(".additional-info #no").show();
     });
 
     $(".btn.complete").click(function() {
