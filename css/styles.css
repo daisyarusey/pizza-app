@@ -1,10 +1,15 @@
 body{
   background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 .container-fluid {
   margin: 0 auto;
   width: 960px;
+}
+.jumbotron{
+  color: black;
 }
 .lobster{
   font-family: 'Lobster', cursive;
@@ -12,11 +17,33 @@ body{
 .lobster>h1{
   font-size: 60px;
 }
-.jumbotron{
+.overlay{
   background:rgba(255,255,255,0.5);
 }
 .services img{
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+@media only screen and (max-width: 600px){
+  .container-fluid {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container-fluid {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container-fluid {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-fluid {
+    width: 70%;
+  }
 }
