@@ -7,6 +7,7 @@
   <title>Pizzaria Parlor</title>
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Kalam|Kaushan+Script|Playball|Satisfy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mdb.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,11 +17,14 @@
         <h1>Pizzaria Pizza Parlor</h1>
         <h2> There is no better feeling in the world than a warm pizza box on your lap.</h2>
       </div>
+    </div>
+      
 
       <div class="services">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <img src="images/pizza1.jpg">
+            <br>
             <br>
             <h3>Size</h3>
             <select class="form-control size">
@@ -29,8 +33,9 @@
               <option label="Large" value="1000">Large</option>
             </select>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <img src="images/pizza2.jpg">
+            <br>
             <br>
             <h3>Toppings</h3>
             <select class="form-control toppings">
@@ -39,8 +44,9 @@
               <option label="Pepperoni" value="80">Pepperoni</option>
             </select>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <img src="images/pizza3.jpg">
+            <br>
             <br>
             <h3>Crust</h3>
             <select class="form-control crust">
@@ -53,11 +59,11 @@
         <div class="text-center mt-5">
           <button class="btn btn-info order" type="submit">Order</button>
         </div>
-        <table class="table mt-5">
+        <table class="table mt-5 overlay">
           <thead>
             <tr>
-              <th scope="col">Pizza size</th>
               <th scope="col">Order No.</th>
+              <th scope="col">Size</th>
               <th scope="col">Toppings</th>
               <th scope="col">Crust</th>
               <th scope="col">Total</th>
@@ -74,7 +80,7 @@
           </tbody>
         </table>
 
-        <div class="additional-buttons">
+        <div class="additional-buttons mb-5">
             <div class="text-center">
               <button class="btn btn-info add-pizza" type="submit">Add Another</button>
               <div class="additional-info">
@@ -83,7 +89,7 @@
                 <h4 id="no">Your order will be ready after 10 minutes and you can pick it</h4>
                 <h4 id="yes">Your order has been received! We are dispatching our rider to <span></span></h4>
                 <div class="location text-center">
-                  <input type="text" size="30" placeholder="Where do you live?"/>
+                  <input type="text" size="30" placeholder="Enter the delivery address"/>
                   <button class="btn btn-info complete" type="submit">Complete</button>
                 </div>
               </div>
@@ -96,7 +102,6 @@
             </div>
           </div>
       </div>
-    </div>
   </div>
 </body>
 <script src="js/jquery-3.4.1.js"></script>
